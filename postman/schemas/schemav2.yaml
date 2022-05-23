@@ -4,7 +4,7 @@ info:
   title: Refractored API
   description: Items API
 servers: 
-  - url: http://localhost:4200
+  - url: http://localhost:4201
     description: API Server Description
 security: 
   - BasicAuth: []
