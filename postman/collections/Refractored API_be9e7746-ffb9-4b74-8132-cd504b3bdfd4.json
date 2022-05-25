@@ -1,0 +1,711 @@
+{
+	"info": {
+		"_postman_id": "b601c5b1-e597-4857-a0f5-8cf2a62537af",
+		"name": "Refractored API",
+		"description": "Items API Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "items",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Get a Single Item details by passing it's ID",
+							"id": "a48d6137-3ee4-4679-a4a7-acb00bd511cd",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) description of parameter passed",
+										"key": "entityId",
+										"value": "in"
+									},
+									{
+										"description": "(Required) description of parameter passed",
+										"key": "clientURN",
+										"value": "in"
+									},
+									{
+										"description": "(Required) description of parameter passed",
+										"key": "applianceToken",
+										"value": "in"
+									},
+									{
+										"description": "(Required) description of parameter passed",
+										"key": "systemCode",
+										"value": "in"
+									},
+									{
+										"description": "(Required) description of parameter passed",
+										"key": "countryCode",
+										"value": "in"
+									},
+									{
+										"description": "(Required) description of parameter passed",
+										"key": "clientCode",
+										"value": "in"
+									},
+									{
+										"description": "(Required) description of parameter passed",
+										"key": "clientGroupCode",
+										"value": "in"
+									},
+									{
+										"description": "(Required) description of parameter passed",
+										"key": "channelCode",
+										"value": "in"
+									},
+									{
+										"description": "(Required) description of parameter passed",
+										"key": "clientUserId",
+										"value": "in"
+									},
+									{
+										"description": "(Required) description of parameter passed",
+										"key": "clientPassword",
+										"value": "in"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/items/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"items",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "8831c383-c0ee-440e-9774-7dbb1739773a",
+											"key": "id",
+											"value": "in",
+											"description": "(Required) description of parameter passed"
+										}
+									]
+								},
+								"description": "get Item details by Id"
+							},
+							"response": [
+								{
+									"id": "2c2bb004-d1fc-47d3-b121-2f43dc8392fa",
+									"name": "Item Retrieved by ID",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											},
+											{
+												"description": "(Required) description of parameter passed",
+												"key": "entityId",
+												"value": "in"
+											},
+											{
+												"description": "(Required) description of parameter passed",
+												"key": "clientURN",
+												"value": "in"
+											},
+											{
+												"description": "(Required) description of parameter passed",
+												"key": "applianceToken",
+												"value": "in"
+											},
+											{
+												"description": "(Required) description of parameter passed",
+												"key": "systemCode",
+												"value": "in"
+											},
+											{
+												"description": "(Required) description of parameter passed",
+												"key": "countryCode",
+												"value": "in"
+											},
+											{
+												"description": "(Required) description of parameter passed",
+												"key": "clientCode",
+												"value": "in"
+											},
+											{
+												"description": "(Required) description of parameter passed",
+												"key": "clientGroupCode",
+												"value": "in"
+											},
+											{
+												"description": "(Required) description of parameter passed",
+												"key": "channelCode",
+												"value": "in"
+											},
+											{
+												"description": "(Required) description of parameter passed",
+												"key": "clientUserId",
+												"value": "in"
+											},
+											{
+												"description": "(Required) description of parameter passed",
+												"key": "clientPassword",
+												"value": "in"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/items/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"items",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "in",
+													"description": "(Required) description of parameter passed"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"Source\": {\n    \"ChannelCode\": \"esse enim dolor\",\n    \"ChannelGroupCode\": \"dolor enim\",\n    \"SystemCode\": \"ex deserunt sed cillum labore\",\n    \"CountryCode\": \"tempor dolore adipisicing consequat ex\",\n    \"ClientCode\": \"quis do sunt\",\n    \"ClientCodeDescription\": \"elit fugiat pariatur labore\",\n    \"ClientGroupCode\": \"nostrud incididunt sed\",\n    \"ClientGroupDescription\": \"sint aliquip enim\"\n  },\n  \"ItemDetailsList\": {\n    \"ItemDetails\": {\n      \"ItemCode\": \"1943-03-02\",\n      \"ItemCodeDescription\": \"cillum sunt nostrud est\",\n      \"ManufacturerBrandCode\": \"in\",\n      \"ManufacturerBrandDescription\": \"tempor exercitation ad\",\n      \"GoodsColour\": \"magna sint\",\n      \"ModelNumber\": \"aute dolore eiusmod esse cupidatat\",\n      \"SerialNumber\": \"proident\",\n      \"OperationalStatusCode\": \"elit\",\n      \"DGAllocatedSupplierAgentCode\": \"ut nulla nostrud\",\n      \"DGAllocatedSupplierBranchCode\": \"do eiusmod dolor Excepteur\",\n      \"LastServiceDate\": \"do Excepteur\",\n      \"LastServiceTime\": \"sed occaecat nulla ad in\",\n      \"ItemCatCode\": \"sed magna voluptate deserunt\",\n      \"ManufacturerBrandGroupCode\": \"anim fugiat velit\",\n      \"ItemID\": {\n        \"EID\": \"rt\"\n      },\n      \"ItemURNList\": {\n        \"ItemURN\": {\n          \"ClientURN\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ApplianceToken\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        }\n      },\n      \"Item\": {\n        \"ItemLink\": {\n          \"MemIdNum\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"SrcCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"ItemDetails\": {\n          \"value\": \"<Circular reference to #/components/schemas/ItemDetails detected>\"\n        },\n        \"AdditionalDetails\": {\n          \"BoilerType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ExtCovPrdFee\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"PdNettFlg\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"CallSource\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"PeriodOfCover\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"GoodsColour\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"CoverType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"BreakdownStartDate\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"OtherIds\": {\n          \"OtherId1\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherId1CategoryCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherId2\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherId2CategoryCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherId3\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherId3CategoryCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherModelId1\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherModelId1CategoryCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherModelId2\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherModelId2CategoryCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"Cover\": {\n          \"ManufacturerGuaranteeLabourMonths\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ManufacturerGuaranteePartsMonths\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ThirdPartyGuaranteeLabourMonths\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ThirdPartyGuaranteePartsMonths\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"Purchase\": {\n          \"PurchasePrice\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"PriceCurrencyCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"PurchaseDate\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"PurchaseTime\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"RecommendedPrice\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"RecommendedPriceCurrencyCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"PurchaseRetailer\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"Address\": {\n          \"AddressCategory\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"AddressOverride\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"AddressStatus\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"AddressDetails\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"PersonOwnerList\": {\n          \"PersonOwner\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"PersonUserList\": {\n          \"PersonUser\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"ClientCode\": \"Duis elit occaecat labore sint\",\n        \"ItemCtgCode\": \"Lorem\"\n      }\n    }\n  },\n  \"ErrorResponseList\": {\n    \"Error\": {\n      \"ErrorCode\": \"Duis anim laborum\",\n      \"ErrorDescription\": \"in qui\"\n    }\n  }\n}"
+								}
+							]
+						},
+						{
+							"name": "/items/:id",
+							"id": "11eafb12-9a61-4947-86ba-2c14036f5095",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"description": "(Required) description of parameter passed",
+										"key": "entityId",
+										"value": "in"
+									},
+									{
+										"description": "(Required) description of parameter passed",
+										"key": "clientURN",
+										"value": "in"
+									},
+									{
+										"description": "(Required) description of parameter passed",
+										"key": "applianceToken",
+										"value": "in"
+									},
+									{
+										"description": "(Required) description of parameter passed",
+										"key": "systemCode",
+										"value": "in"
+									},
+									{
+										"description": "(Required) description of parameter passed",
+										"key": "countryCode",
+										"value": "in"
+									},
+									{
+										"description": "(Required) description of parameter passed",
+										"key": "clientCode",
+										"value": "in"
+									},
+									{
+										"description": "(Required) description of parameter passed",
+										"key": "clientGroupCode",
+										"value": "in"
+									},
+									{
+										"description": "(Required) description of parameter passed",
+										"key": "channelCode",
+										"value": "in"
+									},
+									{
+										"description": "(Required) description of parameter passed",
+										"key": "clientUserId",
+										"value": "in"
+									},
+									{
+										"description": "(Required) description of parameter passed",
+										"key": "clientPassword",
+										"value": "in"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"SourceEvent\": {\n    \"BusinessEventSourceCode\": \"est reprehenderit anim incididunt\",\n    \"BusinessEventCode\": \"\",\n    \"ReceivedDate\": \"elit\",\n    \"ReceivedTime\": \"ea d\",\n    \"LogonUserId\": \"ipsum Duis nulla\"\n  },\n  \"ItemID\": {\n    \"EID\": \"rt\"\n  },\n  \"ItemURN\": {\n    \"ClientURN\": \"sed nisi\",\n    \"ApplianceToken\": \"ex\"\n  },\n  \"Item\": {\n    \"ItemLink\": {\n      \"MemIdNum\": \"in dolor ut\",\n      \"SrcCode\": \"Lorem anim do\"\n    },\n    \"ItemDetails\": {\n      \"ItemCode\": \"2008-08-10\",\n      \"ItemCodeDescription\": \"nulla Ut nisi aute exercitation\",\n      \"ManufacturerBrandCode\": \"et commodo amet\",\n      \"ManufacturerBrandDescription\": \"ullamco eu nulla proident in\",\n      \"GoodsColour\": \"laborum elit\",\n      \"ModelNumber\": \"laboris\",\n      \"SerialNumber\": \"reprehender\",\n      \"OperationalStatusCode\": \"occaecat dolore elit\",\n      \"DGAllocatedSupplierAgentCode\": \"sunt adipisicing occaecat\",\n      \"DGAllocatedSupplierBranchCode\": \"sunt\",\n      \"LastServiceDate\": \"in cupidatat ips\",\n      \"LastServiceTime\": \"nulla aliquip non\",\n      \"ItemCatCode\": \"in laborum ve\",\n      \"ManufacturerBrandGroupCode\": \"qui ad cupidatat ut laboris\",\n      \"ItemID\": {\n        \"EID\": \"rt\"\n      },\n      \"ItemURNList\": {\n        \"ItemURN\": {\n          \"ClientURN\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ApplianceToken\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        }\n      },\n      \"Item\": {\n        \"value\": \"<Circular reference to #/components/schemas/Item detected>\"\n      }\n    },\n    \"AdditionalDetails\": {\n      \"BoilerType\": \"incididunt irure\",\n      \"ExtCovPrdFee\": \"consequat dolor sint\",\n      \"PdNettFlg\": \"ut tempor\",\n      \"CallSource\": \"gsg\",\n      \"PeriodOfCover\": \"nisi minim exercitation\",\n      \"GoodsColour\": \"in Lorem sunt l\",\n      \"CoverType\": \"magna minim\",\n      \"BreakdownStartDate\": \"dolor Lorem\"\n    },\n    \"OtherIds\": {\n      \"OtherId1\": \"Lorem in non\",\n      \"OtherId1CategoryCode\": \"voluptate esse eiusmod Ut dolore\",\n      \"OtherId2\": \"irure ullamco exercitation\",\n      \"OtherId2CategoryCode\": \"ad non adipisicing aute dolor\",\n      \"OtherId3\": \"adipisicing incididunt veniam\",\n      \"OtherId3CategoryCode\": \"amet aute\",\n      \"OtherModelId1\": \"deserunt\",\n      \"OtherModelId1CategoryCode\": \"veniam esse\",\n      \"OtherModelId2\": \"in fugiat mollit\",\n      \"OtherModelId2CategoryCode\": \"adipi\"\n    },\n    \"Cover\": {\n      \"ManufacturerGuaranteeLabourMonths\": \"quis c\",\n      \"ManufacturerGuaranteePartsMonths\": \"deserunt fugiat\",\n      \"ThirdPartyGuaranteeLabourMonths\": \"laboris exercitation sint dolor\",\n      \"ThirdPartyGuaranteePartsMonths\": \"eu do\"\n    },\n    \"Purchase\": {\n      \"PurchasePrice\": \"nostrud nulla\",\n      \"PriceCurrencyCode\": \"aute eu\",\n      \"PurchaseDate\": \"in consectetur veniam\",\n      \"PurchaseTime\": \"ex labore\",\n      \"RecommendedPrice\": \"fugiat sed esse deserunt\",\n      \"RecommendedPriceCurrencyCode\": \"labore veniam voluptate mollit ad\",\n      \"PurchaseRetailer\": \"id in\"\n    },\n    \"Address\": {\n      \"AddressCategory\": \"pariatur\",\n      \"AddressOverride\": \"et enim magna\",\n      \"AddressStatus\": \"Excepteur veniam id aute\",\n      \"AddressDetails\": {\n        \"AddressLine1\": \"officia est quis minim\",\n        \"AddressLine2\": \"amet laboris\",\n        \"AddressLine3\": \"minim qui consectetur sunt amet\",\n        \"AddressLine4\": \"adipisicing magna \",\n        \"PostalCode\": \"consequat non\",\n        \"CountryCode\": \"labore est voluptate\"\n      }\n    },\n    \"PersonOwnerList\": {\n      \"PersonOwner\": {\n        \"PreviousClientURN\": \"Ut eiusmod sunt\",\n        \"ClientURN\": \"id laboris sunt\",\n        \"PreviousEID\": \"sed voluptate id\",\n        \"EID\": \"rt\",\n        \"SrcCode\": \"exercitation ut pariatur elit dolor\"\n      }\n    },\n    \"PersonUserList\": {\n      \"PersonUser\": {\n        \"PreviousClientURN\": \"nostrud elit in laborum\",\n        \"ClientURN\": \"eu\",\n        \"PreviousEID\": \"sit irure\",\n        \"EID\": \"rt\",\n        \"SrcCode\": \"quis dolor ut\"\n      }\n    },\n    \"ClientCode\": \"qui officia elit non enim\",\n    \"ItemCtgCode\": \"adipisicing dolore anim\"\n  },\n  \"Plan\": {\n    \"CompanyCode\": \"eu adipisicing volu\",\n    \"SchemeCode\": \"nulla do\",\n    \"Reference\": \"aute laborum tempor amet dolore\"\n  },\n  \"IsNewBabyPlan\": \"magna laboris \",\n  \"NewBabyPlanList\": {\n    \"NewBabyPlan\": {\n      \"ItemID\": {\n        \"EID\": \"rt\"\n      },\n      \"ItemURN\": {\n        \"ClientURN\": \"in officia labore\",\n        \"ApplianceToken\": \"incididunt id\"\n      },\n      \"Mailer\": {\n        \"CompanyCode\": \"exercitation sit\",\n        \"SchemeCode\": \"dolore cillum voluptate\",\n        \"Reference\": \"ad nulla irure ex qui\"\n      },\n      \"Item\": {\n        \"ItemLink\": {\n          \"MemIdNum\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"SrcCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"ItemDetails\": {\n          \"ItemCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ItemCodeDescription\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ManufacturerBrandCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ManufacturerBrandDescription\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"GoodsColour\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ModelNumber\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"SerialNumber\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OperationalStatusCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"DGAllocatedSupplierAgentCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"DGAllocatedSupplierBranchCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"LastServiceDate\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"LastServiceTime\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ItemCatCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ManufacturerBrandGroupCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ItemID\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ItemURNList\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Item\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"AdditionalDetails\": {\n          \"BoilerType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ExtCovPrdFee\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"PdNettFlg\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"CallSource\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"PeriodOfCover\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"GoodsColour\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"CoverType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"BreakdownStartDate\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"OtherIds\": {\n          \"OtherId1\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherId1CategoryCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherId2\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherId2CategoryCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherId3\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherId3CategoryCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherModelId1\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherModelId1CategoryCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherModelId2\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherModelId2CategoryCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"Cover\": {\n          \"ManufacturerGuaranteeLabourMonths\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ManufacturerGuaranteePartsMonths\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ThirdPartyGuaranteeLabourMonths\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ThirdPartyGuaranteePartsMonths\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"Purchase\": {\n          \"PurchasePrice\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"PriceCurrencyCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"PurchaseDate\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"PurchaseTime\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"RecommendedPrice\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"RecommendedPriceCurrencyCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"PurchaseRetailer\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"Address\": {\n          \"AddressCategory\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"AddressOverride\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"AddressStatus\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"AddressDetails\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"PersonOwnerList\": {\n          \"PersonOwner\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"PersonUserList\": {\n          \"PersonUser\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"ClientCode\": \"occaecat eu in\",\n        \"ItemCtgCode\": \"occaecat\"\n      }\n    }\n  },\n  \"Mailer\": {\n    \"CompanyCode\": \"ut ad\",\n    \"SchemeCode\": \"tempor dolore dolor\",\n    \"Reference\": \"esse adipisicing nostrud\"\n  },\n  \"UpdateMailerStatus\": \"aliqua\",\n  \"CustomerToken\": \"commodo amet magna dolore\",\n  \"OvrBabyBSD\": \"est eiusmod consequat adipisicing\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/items/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"items",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "e231ce21-d23a-4f29-8105-a7f9d4e31dc6",
+											"key": "id",
+											"value": "in",
+											"description": "(Required) description of parameter passed"
+										}
+									]
+								},
+								"description": "updates an item by Id"
+							},
+							"response": [
+								{
+									"id": "eadb2377-5c4c-46f7-a2d2-0465ca2fff04",
+									"name": "Item updated by ID",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											},
+											{
+												"description": "(Required) description of parameter passed",
+												"key": "entityId",
+												"value": "in"
+											},
+											{
+												"description": "(Required) description of parameter passed",
+												"key": "clientURN",
+												"value": "in"
+											},
+											{
+												"description": "(Required) description of parameter passed",
+												"key": "applianceToken",
+												"value": "in"
+											},
+											{
+												"description": "(Required) description of parameter passed",
+												"key": "systemCode",
+												"value": "in"
+											},
+											{
+												"description": "(Required) description of parameter passed",
+												"key": "countryCode",
+												"value": "in"
+											},
+											{
+												"description": "(Required) description of parameter passed",
+												"key": "clientCode",
+												"value": "in"
+											},
+											{
+												"description": "(Required) description of parameter passed",
+												"key": "clientGroupCode",
+												"value": "in"
+											},
+											{
+												"description": "(Required) description of parameter passed",
+												"key": "channelCode",
+												"value": "in"
+											},
+											{
+												"description": "(Required) description of parameter passed",
+												"key": "clientUserId",
+												"value": "in"
+											},
+											{
+												"description": "(Required) description of parameter passed",
+												"key": "clientPassword",
+												"value": "in"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"SourceEvent\": {\n    \"BusinessEventSourceCode\": \"est reprehenderit anim incididunt\",\n    \"BusinessEventCode\": \"\",\n    \"ReceivedDate\": \"elit\",\n    \"ReceivedTime\": \"ea d\",\n    \"LogonUserId\": \"ipsum Duis nulla\"\n  },\n  \"ItemID\": {\n    \"EID\": \"rt\"\n  },\n  \"ItemURN\": {\n    \"ClientURN\": \"sed nisi\",\n    \"ApplianceToken\": \"ex\"\n  },\n  \"Item\": {\n    \"ItemLink\": {\n      \"MemIdNum\": \"in dolor ut\",\n      \"SrcCode\": \"Lorem anim do\"\n    },\n    \"ItemDetails\": {\n      \"ItemCode\": \"2008-08-10\",\n      \"ItemCodeDescription\": \"nulla Ut nisi aute exercitation\",\n      \"ManufacturerBrandCode\": \"et commodo amet\",\n      \"ManufacturerBrandDescription\": \"ullamco eu nulla proident in\",\n      \"GoodsColour\": \"laborum elit\",\n      \"ModelNumber\": \"laboris\",\n      \"SerialNumber\": \"reprehender\",\n      \"OperationalStatusCode\": \"occaecat dolore elit\",\n      \"DGAllocatedSupplierAgentCode\": \"sunt adipisicing occaecat\",\n      \"DGAllocatedSupplierBranchCode\": \"sunt\",\n      \"LastServiceDate\": \"in cupidatat ips\",\n      \"LastServiceTime\": \"nulla aliquip non\",\n      \"ItemCatCode\": \"in laborum ve\",\n      \"ManufacturerBrandGroupCode\": \"qui ad cupidatat ut laboris\",\n      \"ItemID\": {\n        \"EID\": \"rt\"\n      },\n      \"ItemURNList\": {\n        \"ItemURN\": {\n          \"ClientURN\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ApplianceToken\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        }\n      },\n      \"Item\": {\n        \"value\": \"<Circular reference to #/components/schemas/Item detected>\"\n      }\n    },\n    \"AdditionalDetails\": {\n      \"BoilerType\": \"incididunt irure\",\n      \"ExtCovPrdFee\": \"consequat dolor sint\",\n      \"PdNettFlg\": \"ut tempor\",\n      \"CallSource\": \"gsg\",\n      \"PeriodOfCover\": \"nisi minim exercitation\",\n      \"GoodsColour\": \"in Lorem sunt l\",\n      \"CoverType\": \"magna minim\",\n      \"BreakdownStartDate\": \"dolor Lorem\"\n    },\n    \"OtherIds\": {\n      \"OtherId1\": \"Lorem in non\",\n      \"OtherId1CategoryCode\": \"voluptate esse eiusmod Ut dolore\",\n      \"OtherId2\": \"irure ullamco exercitation\",\n      \"OtherId2CategoryCode\": \"ad non adipisicing aute dolor\",\n      \"OtherId3\": \"adipisicing incididunt veniam\",\n      \"OtherId3CategoryCode\": \"amet aute\",\n      \"OtherModelId1\": \"deserunt\",\n      \"OtherModelId1CategoryCode\": \"veniam esse\",\n      \"OtherModelId2\": \"in fugiat mollit\",\n      \"OtherModelId2CategoryCode\": \"adipi\"\n    },\n    \"Cover\": {\n      \"ManufacturerGuaranteeLabourMonths\": \"quis c\",\n      \"ManufacturerGuaranteePartsMonths\": \"deserunt fugiat\",\n      \"ThirdPartyGuaranteeLabourMonths\": \"laboris exercitation sint dolor\",\n      \"ThirdPartyGuaranteePartsMonths\": \"eu do\"\n    },\n    \"Purchase\": {\n      \"PurchasePrice\": \"nostrud nulla\",\n      \"PriceCurrencyCode\": \"aute eu\",\n      \"PurchaseDate\": \"in consectetur veniam\",\n      \"PurchaseTime\": \"ex labore\",\n      \"RecommendedPrice\": \"fugiat sed esse deserunt\",\n      \"RecommendedPriceCurrencyCode\": \"labore veniam voluptate mollit ad\",\n      \"PurchaseRetailer\": \"id in\"\n    },\n    \"Address\": {\n      \"AddressCategory\": \"pariatur\",\n      \"AddressOverride\": \"et enim magna\",\n      \"AddressStatus\": \"Excepteur veniam id aute\",\n      \"AddressDetails\": {\n        \"AddressLine1\": \"officia est quis minim\",\n        \"AddressLine2\": \"amet laboris\",\n        \"AddressLine3\": \"minim qui consectetur sunt amet\",\n        \"AddressLine4\": \"adipisicing magna \",\n        \"PostalCode\": \"consequat non\",\n        \"CountryCode\": \"labore est voluptate\"\n      }\n    },\n    \"PersonOwnerList\": {\n      \"PersonOwner\": {\n        \"PreviousClientURN\": \"Ut eiusmod sunt\",\n        \"ClientURN\": \"id laboris sunt\",\n        \"PreviousEID\": \"sed voluptate id\",\n        \"EID\": \"rt\",\n        \"SrcCode\": \"exercitation ut pariatur elit dolor\"\n      }\n    },\n    \"PersonUserList\": {\n      \"PersonUser\": {\n        \"PreviousClientURN\": \"nostrud elit in laborum\",\n        \"ClientURN\": \"eu\",\n        \"PreviousEID\": \"sit irure\",\n        \"EID\": \"rt\",\n        \"SrcCode\": \"quis dolor ut\"\n      }\n    },\n    \"ClientCode\": \"qui officia elit non enim\",\n    \"ItemCtgCode\": \"adipisicing dolore anim\"\n  },\n  \"Plan\": {\n    \"CompanyCode\": \"eu adipisicing volu\",\n    \"SchemeCode\": \"nulla do\",\n    \"Reference\": \"aute laborum tempor amet dolore\"\n  },\n  \"IsNewBabyPlan\": \"magna laboris \",\n  \"NewBabyPlanList\": {\n    \"NewBabyPlan\": {\n      \"ItemID\": {\n        \"EID\": \"rt\"\n      },\n      \"ItemURN\": {\n        \"ClientURN\": \"in officia labore\",\n        \"ApplianceToken\": \"incididunt id\"\n      },\n      \"Mailer\": {\n        \"CompanyCode\": \"exercitation sit\",\n        \"SchemeCode\": \"dolore cillum voluptate\",\n        \"Reference\": \"ad nulla irure ex qui\"\n      },\n      \"Item\": {\n        \"ItemLink\": {\n          \"MemIdNum\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"SrcCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"ItemDetails\": {\n          \"ItemCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ItemCodeDescription\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ManufacturerBrandCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ManufacturerBrandDescription\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"GoodsColour\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ModelNumber\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"SerialNumber\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OperationalStatusCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"DGAllocatedSupplierAgentCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"DGAllocatedSupplierBranchCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"LastServiceDate\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"LastServiceTime\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ItemCatCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ManufacturerBrandGroupCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ItemID\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ItemURNList\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Item\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"AdditionalDetails\": {\n          \"BoilerType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ExtCovPrdFee\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"PdNettFlg\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"CallSource\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"PeriodOfCover\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"GoodsColour\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"CoverType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"BreakdownStartDate\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"OtherIds\": {\n          \"OtherId1\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherId1CategoryCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherId2\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherId2CategoryCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherId3\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherId3CategoryCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherModelId1\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherModelId1CategoryCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherModelId2\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherModelId2CategoryCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"Cover\": {\n          \"ManufacturerGuaranteeLabourMonths\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ManufacturerGuaranteePartsMonths\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ThirdPartyGuaranteeLabourMonths\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ThirdPartyGuaranteePartsMonths\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"Purchase\": {\n          \"PurchasePrice\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"PriceCurrencyCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"PurchaseDate\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"PurchaseTime\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"RecommendedPrice\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"RecommendedPriceCurrencyCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"PurchaseRetailer\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"Address\": {\n          \"AddressCategory\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"AddressOverride\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"AddressStatus\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"AddressDetails\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"PersonOwnerList\": {\n          \"PersonOwner\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"PersonUserList\": {\n          \"PersonUser\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"ClientCode\": \"occaecat eu in\",\n        \"ItemCtgCode\": \"occaecat\"\n      }\n    }\n  },\n  \"Mailer\": {\n    \"CompanyCode\": \"ut ad\",\n    \"SchemeCode\": \"tempor dolore dolor\",\n    \"Reference\": \"esse adipisicing nostrud\"\n  },\n  \"UpdateMailerStatus\": \"aliqua\",\n  \"CustomerToken\": \"commodo amet magna dolore\",\n  \"OvrBabyBSD\": \"est eiusmod consequat adipisicing\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/items/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"items",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "in",
+													"description": "(Required) description of parameter passed"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"ItemID\": {\n    \"EID\": \"rt\"\n  },\n  \"ItemURN\": {\n    \"ClientURN\": \"mollit id\",\n    \"ApplianceToken\": \"Lorem do ea anim\"\n  },\n  \"BabyPlanList\": {\n    \"BabyPlan\": {\n      \"CompanyCode\": \"sint nostrud\",\n      \"SchemeCode\": \"dolor eu al\",\n      \"Reference\": \"ipsum in\",\n      \"ItemCode\": \"1979-07-25\",\n      \"ModelNumber1\": \"veniam\",\n      \"ModelNumber2\": \"proident adipisicing eu sit\",\n      \"ErrorMessage\": \"nisi i\"\n    }\n  },\n  \"ErrorResponseList\": {\n    \"Error\": {\n      \"ErrorCode\": \"labore et Lorem\",\n      \"ErrorDescription\": \"amet sunt magna\"\n    }\n  }\n}"
+								},
+								{
+									"id": "24c99f66-d3f4-4a2f-b1cd-2624b72e816f",
+									"name": "ID not present",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											},
+											{
+												"description": "(Required) description of parameter passed",
+												"key": "entityId",
+												"value": "in"
+											},
+											{
+												"description": "(Required) description of parameter passed",
+												"key": "clientURN",
+												"value": "in"
+											},
+											{
+												"description": "(Required) description of parameter passed",
+												"key": "applianceToken",
+												"value": "in"
+											},
+											{
+												"description": "(Required) description of parameter passed",
+												"key": "systemCode",
+												"value": "in"
+											},
+											{
+												"description": "(Required) description of parameter passed",
+												"key": "countryCode",
+												"value": "in"
+											},
+											{
+												"description": "(Required) description of parameter passed",
+												"key": "clientCode",
+												"value": "in"
+											},
+											{
+												"description": "(Required) description of parameter passed",
+												"key": "clientGroupCode",
+												"value": "in"
+											},
+											{
+												"description": "(Required) description of parameter passed",
+												"key": "channelCode",
+												"value": "in"
+											},
+											{
+												"description": "(Required) description of parameter passed",
+												"key": "clientUserId",
+												"value": "in"
+											},
+											{
+												"description": "(Required) description of parameter passed",
+												"key": "clientPassword",
+												"value": "in"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"SourceEvent\": {\n    \"BusinessEventSourceCode\": \"est reprehenderit anim incididunt\",\n    \"BusinessEventCode\": \"\",\n    \"ReceivedDate\": \"elit\",\n    \"ReceivedTime\": \"ea d\",\n    \"LogonUserId\": \"ipsum Duis nulla\"\n  },\n  \"ItemID\": {\n    \"EID\": \"rt\"\n  },\n  \"ItemURN\": {\n    \"ClientURN\": \"sed nisi\",\n    \"ApplianceToken\": \"ex\"\n  },\n  \"Item\": {\n    \"ItemLink\": {\n      \"MemIdNum\": \"in dolor ut\",\n      \"SrcCode\": \"Lorem anim do\"\n    },\n    \"ItemDetails\": {\n      \"ItemCode\": \"2008-08-10\",\n      \"ItemCodeDescription\": \"nulla Ut nisi aute exercitation\",\n      \"ManufacturerBrandCode\": \"et commodo amet\",\n      \"ManufacturerBrandDescription\": \"ullamco eu nulla proident in\",\n      \"GoodsColour\": \"laborum elit\",\n      \"ModelNumber\": \"laboris\",\n      \"SerialNumber\": \"reprehender\",\n      \"OperationalStatusCode\": \"occaecat dolore elit\",\n      \"DGAllocatedSupplierAgentCode\": \"sunt adipisicing occaecat\",\n      \"DGAllocatedSupplierBranchCode\": \"sunt\",\n      \"LastServiceDate\": \"in cupidatat ips\",\n      \"LastServiceTime\": \"nulla aliquip non\",\n      \"ItemCatCode\": \"in laborum ve\",\n      \"ManufacturerBrandGroupCode\": \"qui ad cupidatat ut laboris\",\n      \"ItemID\": {\n        \"EID\": \"rt\"\n      },\n      \"ItemURNList\": {\n        \"ItemURN\": {\n          \"ClientURN\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ApplianceToken\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        }\n      },\n      \"Item\": {\n        \"value\": \"<Circular reference to #/components/schemas/Item detected>\"\n      }\n    },\n    \"AdditionalDetails\": {\n      \"BoilerType\": \"incididunt irure\",\n      \"ExtCovPrdFee\": \"consequat dolor sint\",\n      \"PdNettFlg\": \"ut tempor\",\n      \"CallSource\": \"gsg\",\n      \"PeriodOfCover\": \"nisi minim exercitation\",\n      \"GoodsColour\": \"in Lorem sunt l\",\n      \"CoverType\": \"magna minim\",\n      \"BreakdownStartDate\": \"dolor Lorem\"\n    },\n    \"OtherIds\": {\n      \"OtherId1\": \"Lorem in non\",\n      \"OtherId1CategoryCode\": \"voluptate esse eiusmod Ut dolore\",\n      \"OtherId2\": \"irure ullamco exercitation\",\n      \"OtherId2CategoryCode\": \"ad non adipisicing aute dolor\",\n      \"OtherId3\": \"adipisicing incididunt veniam\",\n      \"OtherId3CategoryCode\": \"amet aute\",\n      \"OtherModelId1\": \"deserunt\",\n      \"OtherModelId1CategoryCode\": \"veniam esse\",\n      \"OtherModelId2\": \"in fugiat mollit\",\n      \"OtherModelId2CategoryCode\": \"adipi\"\n    },\n    \"Cover\": {\n      \"ManufacturerGuaranteeLabourMonths\": \"quis c\",\n      \"ManufacturerGuaranteePartsMonths\": \"deserunt fugiat\",\n      \"ThirdPartyGuaranteeLabourMonths\": \"laboris exercitation sint dolor\",\n      \"ThirdPartyGuaranteePartsMonths\": \"eu do\"\n    },\n    \"Purchase\": {\n      \"PurchasePrice\": \"nostrud nulla\",\n      \"PriceCurrencyCode\": \"aute eu\",\n      \"PurchaseDate\": \"in consectetur veniam\",\n      \"PurchaseTime\": \"ex labore\",\n      \"RecommendedPrice\": \"fugiat sed esse deserunt\",\n      \"RecommendedPriceCurrencyCode\": \"labore veniam voluptate mollit ad\",\n      \"PurchaseRetailer\": \"id in\"\n    },\n    \"Address\": {\n      \"AddressCategory\": \"pariatur\",\n      \"AddressOverride\": \"et enim magna\",\n      \"AddressStatus\": \"Excepteur veniam id aute\",\n      \"AddressDetails\": {\n        \"AddressLine1\": \"officia est quis minim\",\n        \"AddressLine2\": \"amet laboris\",\n        \"AddressLine3\": \"minim qui consectetur sunt amet\",\n        \"AddressLine4\": \"adipisicing magna \",\n        \"PostalCode\": \"consequat non\",\n        \"CountryCode\": \"labore est voluptate\"\n      }\n    },\n    \"PersonOwnerList\": {\n      \"PersonOwner\": {\n        \"PreviousClientURN\": \"Ut eiusmod sunt\",\n        \"ClientURN\": \"id laboris sunt\",\n        \"PreviousEID\": \"sed voluptate id\",\n        \"EID\": \"rt\",\n        \"SrcCode\": \"exercitation ut pariatur elit dolor\"\n      }\n    },\n    \"PersonUserList\": {\n      \"PersonUser\": {\n        \"PreviousClientURN\": \"nostrud elit in laborum\",\n        \"ClientURN\": \"eu\",\n        \"PreviousEID\": \"sit irure\",\n        \"EID\": \"rt\",\n        \"SrcCode\": \"quis dolor ut\"\n      }\n    },\n    \"ClientCode\": \"qui officia elit non enim\",\n    \"ItemCtgCode\": \"adipisicing dolore anim\"\n  },\n  \"Plan\": {\n    \"CompanyCode\": \"eu adipisicing volu\",\n    \"SchemeCode\": \"nulla do\",\n    \"Reference\": \"aute laborum tempor amet dolore\"\n  },\n  \"IsNewBabyPlan\": \"magna laboris \",\n  \"NewBabyPlanList\": {\n    \"NewBabyPlan\": {\n      \"ItemID\": {\n        \"EID\": \"rt\"\n      },\n      \"ItemURN\": {\n        \"ClientURN\": \"in officia labore\",\n        \"ApplianceToken\": \"incididunt id\"\n      },\n      \"Mailer\": {\n        \"CompanyCode\": \"exercitation sit\",\n        \"SchemeCode\": \"dolore cillum voluptate\",\n        \"Reference\": \"ad nulla irure ex qui\"\n      },\n      \"Item\": {\n        \"ItemLink\": {\n          \"MemIdNum\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"SrcCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"ItemDetails\": {\n          \"ItemCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ItemCodeDescription\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ManufacturerBrandCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ManufacturerBrandDescription\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"GoodsColour\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ModelNumber\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"SerialNumber\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OperationalStatusCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"DGAllocatedSupplierAgentCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"DGAllocatedSupplierBranchCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"LastServiceDate\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"LastServiceTime\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ItemCatCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ManufacturerBrandGroupCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ItemID\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ItemURNList\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Item\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"AdditionalDetails\": {\n          \"BoilerType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ExtCovPrdFee\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"PdNettFlg\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"CallSource\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"PeriodOfCover\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"GoodsColour\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"CoverType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"BreakdownStartDate\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"OtherIds\": {\n          \"OtherId1\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherId1CategoryCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherId2\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherId2CategoryCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherId3\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherId3CategoryCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherModelId1\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherModelId1CategoryCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherModelId2\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"OtherModelId2CategoryCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"Cover\": {\n          \"ManufacturerGuaranteeLabourMonths\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ManufacturerGuaranteePartsMonths\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ThirdPartyGuaranteeLabourMonths\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ThirdPartyGuaranteePartsMonths\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"Purchase\": {\n          \"PurchasePrice\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"PriceCurrencyCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"PurchaseDate\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"PurchaseTime\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"RecommendedPrice\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"RecommendedPriceCurrencyCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"PurchaseRetailer\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"Address\": {\n          \"AddressCategory\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"AddressOverride\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"AddressStatus\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"AddressDetails\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"PersonOwnerList\": {\n          \"PersonOwner\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"PersonUserList\": {\n          \"PersonUser\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"ClientCode\": \"occaecat eu in\",\n        \"ItemCtgCode\": \"occaecat\"\n      }\n    }\n  },\n  \"Mailer\": {\n    \"CompanyCode\": \"ut ad\",\n    \"SchemeCode\": \"tempor dolore dolor\",\n    \"Reference\": \"esse adipisicing nostrud\"\n  },\n  \"UpdateMailerStatus\": \"aliqua\",\n  \"CustomerToken\": \"commodo amet magna dolore\",\n  \"OvrBabyBSD\": \"est eiusmod consequat adipisicing\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/items/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"items",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "in",
+													"description": "(Required) description of parameter passed"
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"ErrorCode\": \"nulla ea adipisicing dolor officia\",\n  \"ErrorDescription\": \"enim ullamco mollit aliqua\"\n}"
+								}
+							]
+						}
+					],
+					"id": "1d3f7fe7-7772-4711-9cec-1d0c03bce2f3"
+				},
+				{
+					"name": "/items",
+					"id": "8eccb393-ecf3-4188-ad76-bcf56282b3f6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"description": "(Required) description of parameter passed",
+								"key": "entityId",
+								"value": "in"
+							},
+							{
+								"description": "(Required) description of parameter passed",
+								"key": "clientURN",
+								"value": "in"
+							},
+							{
+								"description": "(Required) description of parameter passed",
+								"key": "applianceToken",
+								"value": "in"
+							},
+							{
+								"description": "(Required) description of parameter passed",
+								"key": "systemCode",
+								"value": "in"
+							},
+							{
+								"description": "(Required) description of parameter passed",
+								"key": "countryCode",
+								"value": "in"
+							},
+							{
+								"description": "(Required) description of parameter passed",
+								"key": "clientCode",
+								"value": "in"
+							},
+							{
+								"description": "(Required) description of parameter passed",
+								"key": "clientGroupCode",
+								"value": "in"
+							},
+							{
+								"description": "(Required) description of parameter passed",
+								"key": "channelCode",
+								"value": "in"
+							},
+							{
+								"description": "(Required) description of parameter passed",
+								"key": "clientUserId",
+								"value": "in"
+							},
+							{
+								"description": "(Required) description of parameter passed",
+								"key": "clientPassword",
+								"value": "in"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"SourceEvent\": {\n    \"BusinessEventSourceCode\": \"incididunt magna non\",\n    \"BusinessEventCode\": \"aliquip ipsum proident officia minim\",\n    \"ReceivedDate\": \"ex Lorem in Ut fugiat\",\n    \"ReceivedTime\": \"Ut in\",\n    \"LogonUserId\": \"eu fugiat ipsum\"\n  },\n  \"IsItemOwned\": \"ea est sed irure commodo\",\n  \"ItemID\": {\n    \"EID\": \"rt\"\n  },\n  \"ItemURN\": {\n    \"ClientURN\": \"nulla eiusmod ex\",\n    \"ApplianceToken\": \"ullamco ex\"\n  },\n  \"Item\": {\n    \"ItemLink\": {\n      \"MemIdNum\": \"commodo occaecat aliqua voluptate\",\n      \"SrcCode\": \"cillum ei\"\n    },\n    \"ItemDetails\": {\n      \"ItemCode\": \"1992-04-14\",\n      \"ItemCodeDescription\": \"velit aliquip\",\n      \"ManufacturerBrandCode\": \"commodo\",\n      \"ManufacturerBrandDescription\": \"sed irure\",\n      \"GoodsColour\": \"s\",\n      \"ModelNumber\": \"\",\n      \"SerialNumber\": \"irure voluptate pariatur exercita\",\n      \"OperationalStatusCode\": \"Ut id deserunt sed\",\n      \"DGAllocatedSupplierAgentCode\": \"sit eu qui nisi\",\n      \"DGAllocatedSupplierBranchCode\": \"nostrud\",\n      \"LastServiceDate\": \"ipsum irure in\",\n      \"LastServiceTime\": \"in eu irur\",\n      \"ItemCatCode\": \"aliquip est\",\n      \"ManufacturerBrandGroupCode\": \"et ad\",\n      \"ItemID\": {\n        \"EID\": \"rt\"\n      },\n      \"ItemURNList\": {\n        \"ItemURN\": {\n          \"ClientURN\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ApplianceToken\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        }\n      },\n      \"Item\": {\n        \"value\": \"<Circular reference to #/components/schemas/Item detected>\"\n      }\n    },\n    \"AdditionalDetails\": {\n      \"BoilerType\": \"reprehenderit\",\n      \"ExtCovPrdFee\": \"cillum minim ea do\",\n      \"PdNettFlg\": \"non\",\n      \"CallSource\": \"gsg\",\n      \"PeriodOfCover\": \"minim aliqua non labore\",\n      \"GoodsColour\": \"consequat nostrud aliquip amet\",\n      \"CoverType\": \"aliquip ut incididunt sed\",\n      \"BreakdownStartDate\": \"esse occaecat incididunt\"\n    },\n    \"OtherIds\": {\n      \"OtherId1\": \"proident veniam ipsum\",\n      \"OtherId1CategoryCode\": \"commodo ex irure\",\n      \"OtherId2\": \"laboris Ut\",\n      \"OtherId2CategoryCode\": \"irure\",\n      \"OtherId3\": \"amet si\",\n      \"OtherId3CategoryCode\": \"dolore \",\n      \"OtherModelId1\": \"sed est consectetur\",\n      \"OtherModelId1CategoryCode\": \"Duis dolore\",\n      \"OtherModelId2\": \"ullamco officia \",\n      \"OtherModelId2CategoryCode\": \"nulla magna Ut reprehenderit\"\n    },\n    \"Cover\": {\n      \"ManufacturerGuaranteeLabourMonths\": \"officia minim proident\",\n      \"ManufacturerGuaranteePartsMonths\": \"ad veniam aute reprehenderit\",\n      \"ThirdPartyGuaranteeLabourMonths\": \"et dolor ipsum dolore id\",\n      \"ThirdPartyGuaranteePartsMonths\": \"officia\"\n    },\n    \"Purchase\": {\n      \"PurchasePrice\": \"in elit\",\n      \"PriceCurrencyCode\": \"v\",\n      \"PurchaseDate\": \"laboris et veniam\",\n      \"PurchaseTime\": \"enim mollit adipisicing et\",\n      \"RecommendedPrice\": \"pariatur occaecat quis volu\",\n      \"RecommendedPriceCurrencyCode\": \"cupidatat in\",\n      \"PurchaseRetailer\": \"dolore consectetur \"\n    },\n    \"Address\": {\n      \"AddressCategory\": \"fugiat labore exercitation Duis\",\n      \"AddressOverride\": \"est ad sunt eiusmod\",\n      \"AddressStatus\": \"qui nisi aliquip laboris\",\n      \"AddressDetails\": {\n        \"AddressLine1\": \"nisi ut\",\n        \"AddressLine2\": \"irure ullamco commodo nisi amet\",\n        \"AddressLine3\": \"aute pariatur\",\n        \"AddressLine4\": \"quis laboris est Lorem eu\",\n        \"PostalCode\": \"consequat in in pariatur\",\n        \"CountryCode\": \"dolore Ut nostrud\"\n      }\n    },\n    \"PersonOwnerList\": {\n      \"PersonOwner\": {\n        \"PreviousClientURN\": \"enim nulla\",\n        \"ClientURN\": \"labore aute\",\n        \"PreviousEID\": \"aute sint eu\",\n        \"EID\": \"rt\",\n        \"SrcCode\": \"officia\"\n      }\n    },\n    \"PersonUserList\": {\n      \"PersonUser\": {\n        \"PreviousClientURN\": \"ut in\",\n        \"ClientURN\": \"anim fugiat\",\n        \"PreviousEID\": \"quis ex\",\n        \"EID\": \"rt\",\n        \"SrcCode\": \"culpa id ullamco\"\n      }\n    },\n    \"ClientCode\": \"sunt fugiat ad\",\n    \"ItemCtgCode\": \"enim aute culpa dolore et\"\n  },\n  \"RegisterMailer\": \"est sit\",\n  \"ItemGetPriceDetails\": {\n    \"ItemCreateOffer\": \"ex veniam\",\n    \"GetPriceCallSourceList\": {\n      \"CallSource\": \"gsg\"\n    }\n  },\n  \"CustomerToken\": \"ipsum minim elit proident\",\n  \"PersonEID\": \"sint voluptate in aliqua\",\n  \"MailerDetails\": {\n    \"RegCode\": \"Ut Lorem nulla\",\n    \"ProdQTypeID\": \"do magna labore\",\n    \"BoilerType\": \"labore dolore ullamco dolore\",\n    \"Language\": \"a\"\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/items",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"items"
+							]
+						},
+						"description": "creates Item"
+					},
+					"response": [
+						{
+							"id": "003588d1-18af-45bd-ad0d-fa7c2596b231",
+							"name": "Item Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: basic",
+										"key": "Authorization",
+										"value": "Basic <credentials>"
+									},
+									{
+										"description": "(Required) description of parameter passed",
+										"key": "entityId",
+										"value": "in"
+									},
+									{
+										"description": "(Required) description of parameter passed",
+										"key": "clientURN",
+										"value": "in"
+									},
+									{
+										"description": "(Required) description of parameter passed",
+										"key": "applianceToken",
+										"value": "in"
+									},
+									{
+										"description": "(Required) description of parameter passed",
+										"key": "systemCode",
+										"value": "in"
+									},
+									{
+										"description": "(Required) description of parameter passed",
+										"key": "countryCode",
+										"value": "in"
+									},
+									{
+										"description": "(Required) description of parameter passed",
+										"key": "clientCode",
+										"value": "in"
+									},
+									{
+										"description": "(Required) description of parameter passed",
+										"key": "clientGroupCode",
+										"value": "in"
+									},
+									{
+										"description": "(Required) description of parameter passed",
+										"key": "channelCode",
+										"value": "in"
+									},
+									{
+										"description": "(Required) description of parameter passed",
+										"key": "clientUserId",
+										"value": "in"
+									},
+									{
+										"description": "(Required) description of parameter passed",
+										"key": "clientPassword",
+										"value": "in"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"SourceEvent\": {\n    \"BusinessEventSourceCode\": \"incididunt magna non\",\n    \"BusinessEventCode\": \"aliquip ipsum proident officia minim\",\n    \"ReceivedDate\": \"ex Lorem in Ut fugiat\",\n    \"ReceivedTime\": \"Ut in\",\n    \"LogonUserId\": \"eu fugiat ipsum\"\n  },\n  \"IsItemOwned\": \"ea est sed irure commodo\",\n  \"ItemID\": {\n    \"EID\": \"rt\"\n  },\n  \"ItemURN\": {\n    \"ClientURN\": \"nulla eiusmod ex\",\n    \"ApplianceToken\": \"ullamco ex\"\n  },\n  \"Item\": {\n    \"ItemLink\": {\n      \"MemIdNum\": \"commodo occaecat aliqua voluptate\",\n      \"SrcCode\": \"cillum ei\"\n    },\n    \"ItemDetails\": {\n      \"ItemCode\": \"1992-04-14\",\n      \"ItemCodeDescription\": \"velit aliquip\",\n      \"ManufacturerBrandCode\": \"commodo\",\n      \"ManufacturerBrandDescription\": \"sed irure\",\n      \"GoodsColour\": \"s\",\n      \"ModelNumber\": \"\",\n      \"SerialNumber\": \"irure voluptate pariatur exercita\",\n      \"OperationalStatusCode\": \"Ut id deserunt sed\",\n      \"DGAllocatedSupplierAgentCode\": \"sit eu qui nisi\",\n      \"DGAllocatedSupplierBranchCode\": \"nostrud\",\n      \"LastServiceDate\": \"ipsum irure in\",\n      \"LastServiceTime\": \"in eu irur\",\n      \"ItemCatCode\": \"aliquip est\",\n      \"ManufacturerBrandGroupCode\": \"et ad\",\n      \"ItemID\": {\n        \"EID\": \"rt\"\n      },\n      \"ItemURNList\": {\n        \"ItemURN\": {\n          \"ClientURN\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ApplianceToken\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        }\n      },\n      \"Item\": {\n        \"value\": \"<Circular reference to #/components/schemas/Item detected>\"\n      }\n    },\n    \"AdditionalDetails\": {\n      \"BoilerType\": \"reprehenderit\",\n      \"ExtCovPrdFee\": \"cillum minim ea do\",\n      \"PdNettFlg\": \"non\",\n      \"CallSource\": \"gsg\",\n      \"PeriodOfCover\": \"minim aliqua non labore\",\n      \"GoodsColour\": \"consequat nostrud aliquip amet\",\n      \"CoverType\": \"aliquip ut incididunt sed\",\n      \"BreakdownStartDate\": \"esse occaecat incididunt\"\n    },\n    \"OtherIds\": {\n      \"OtherId1\": \"proident veniam ipsum\",\n      \"OtherId1CategoryCode\": \"commodo ex irure\",\n      \"OtherId2\": \"laboris Ut\",\n      \"OtherId2CategoryCode\": \"irure\",\n      \"OtherId3\": \"amet si\",\n      \"OtherId3CategoryCode\": \"dolore \",\n      \"OtherModelId1\": \"sed est consectetur\",\n      \"OtherModelId1CategoryCode\": \"Duis dolore\",\n      \"OtherModelId2\": \"ullamco officia \",\n      \"OtherModelId2CategoryCode\": \"nulla magna Ut reprehenderit\"\n    },\n    \"Cover\": {\n      \"ManufacturerGuaranteeLabourMonths\": \"officia minim proident\",\n      \"ManufacturerGuaranteePartsMonths\": \"ad veniam aute reprehenderit\",\n      \"ThirdPartyGuaranteeLabourMonths\": \"et dolor ipsum dolore id\",\n      \"ThirdPartyGuaranteePartsMonths\": \"officia\"\n    },\n    \"Purchase\": {\n      \"PurchasePrice\": \"in elit\",\n      \"PriceCurrencyCode\": \"v\",\n      \"PurchaseDate\": \"laboris et veniam\",\n      \"PurchaseTime\": \"enim mollit adipisicing et\",\n      \"RecommendedPrice\": \"pariatur occaecat quis volu\",\n      \"RecommendedPriceCurrencyCode\": \"cupidatat in\",\n      \"PurchaseRetailer\": \"dolore consectetur \"\n    },\n    \"Address\": {\n      \"AddressCategory\": \"fugiat labore exercitation Duis\",\n      \"AddressOverride\": \"est ad sunt eiusmod\",\n      \"AddressStatus\": \"qui nisi aliquip laboris\",\n      \"AddressDetails\": {\n        \"AddressLine1\": \"nisi ut\",\n        \"AddressLine2\": \"irure ullamco commodo nisi amet\",\n        \"AddressLine3\": \"aute pariatur\",\n        \"AddressLine4\": \"quis laboris est Lorem eu\",\n        \"PostalCode\": \"consequat in in pariatur\",\n        \"CountryCode\": \"dolore Ut nostrud\"\n      }\n    },\n    \"PersonOwnerList\": {\n      \"PersonOwner\": {\n        \"PreviousClientURN\": \"enim nulla\",\n        \"ClientURN\": \"labore aute\",\n        \"PreviousEID\": \"aute sint eu\",\n        \"EID\": \"rt\",\n        \"SrcCode\": \"officia\"\n      }\n    },\n    \"PersonUserList\": {\n      \"PersonUser\": {\n        \"PreviousClientURN\": \"ut in\",\n        \"ClientURN\": \"anim fugiat\",\n        \"PreviousEID\": \"quis ex\",\n        \"EID\": \"rt\",\n        \"SrcCode\": \"culpa id ullamco\"\n      }\n    },\n    \"ClientCode\": \"sunt fugiat ad\",\n    \"ItemCtgCode\": \"enim aute culpa dolore et\"\n  },\n  \"RegisterMailer\": \"est sit\",\n  \"ItemGetPriceDetails\": {\n    \"ItemCreateOffer\": \"ex veniam\",\n    \"GetPriceCallSourceList\": {\n      \"CallSource\": \"gsg\"\n    }\n  },\n  \"CustomerToken\": \"ipsum minim elit proident\",\n  \"PersonEID\": \"sint voluptate in aliqua\",\n  \"MailerDetails\": {\n    \"RegCode\": \"Ut Lorem nulla\",\n    \"ProdQTypeID\": \"do magna labore\",\n    \"BoilerType\": \"labore dolore ullamco dolore\",\n    \"Language\": \"a\"\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/items",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"items"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n  \"ItemID\": {\n    \"EID\": \"rt\"\n  },\n  \"ItemURN\": {\n    \"ClientURN\": \"amet veniam\",\n    \"ApplianceToken\": \"mollit deserunt reprehenderit ad\"\n  },\n  \"Mailer\": {\n    \"CompanyCode\": \"in ex\",\n    \"SchemeCode\": \"dolor officia anim laboris fugiat\",\n    \"Reference\": \"magna sed irure\"\n  },\n  \"RTPOfferReferenceList\": {\n    \"RTPOfferReference\": {\n      \"OfferReference\": \"et consequat officia magna\",\n      \"OfferKey\": \"cupidatat anim mollit\",\n      \"CallSource\": \"gsg\"\n    }\n  },\n  \"RTPRateList\": {\n    \"RTPRate\": {\n      \"CallSourceDetails\": {\n        \"CallSource\": \"gsg\",\n        \"CallSourceDescription\": \"voluptate exercitation aliquip\",\n        \"Scheme\": {\n          \"CompanyCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"SchemeCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"TelRegMakerCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"Agent\": {\n          \"AgentNumber\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"SchemeCodeBranchNumber\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        \"ItemCode\": \"1959-02-28\",\n        \"ItemCodeDescription\": \"deserunt tempor et\",\n        \"PriceBand\": \"laborum ullamco\",\n        \"NumberOfItems\": \"ullamco ex ad proident\",\n        \"CoverType\": \"aliqua dolor consequat non\",\n        \"BreakdownStartDate\": \"nulla in fugiat dolor\",\n        \"ContractType\": {\n          \"ProductCategory\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ProductCategoryDesc\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ProductType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ProductTypeDesc\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ProductVariance\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ProductVarianceDesc\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"PaymentTerm\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"PaymentTermDesc\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ContractTypeCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ContractTypeDesc\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ProductDescription\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        }\n      },\n      \"RTPOfferDetails\": {\n        \"OfferReference\": \"irure\",\n        \"OfferKey\": \"Lorem laborum fugiat mollit\",\n        \"OfferPricingKey\": \"dolore eiusmod ipsum nisi proident\",\n        \"PeriodOfCover\": \"velit labore\",\n        \"Fee\": \"ipsum Ut pariatur\",\n        \"WaitDays\": \"irure esse Duis\",\n        \"WicType\": \"aliqua deserunt officia\",\n        \"MultiplanType\": \"id fugiat culpa\",\n        \"MultiplanWarrantyType\": \"labo\",\n        \"RTPPaymentDetails\": {\n          \"PreferredPayment\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"PaymentType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"PaymentProfile\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"CashPaymentType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"NumberOfPayments\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"PaymentFrequency\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"FirstPayment\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"SubsequentPayment\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ExcessAmount\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"RTPRates\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        }\n      }\n    }\n  },\n  \"AlternativeApplianceList\": {\n    \"AlternativeAppliance\": {\n      \"CompanyCode\": \"ex eiusmod et\",\n      \"SchemeCode\": \"nostrud dolor ullamco\",\n      \"ItemGroupCode\": \"incididunt Lorem\",\n      \"ItemCode\": \"2020-07-07\",\n      \"ItemDescription\": \"cupidatat enim velit\"\n    }\n  },\n  \"ErrorResponseList\": {\n    \"Error\": {\n      \"ErrorCode\": \"dolor voluptate incididunt Duis\",\n      \"ErrorDescription\": \"ex ipsum\"\n    }\n  }\n}"
+						}
+					]
+				}
+			],
+			"id": "3c0c7942-8d63-44de-a708-6a2053f32209"
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "username",
+				"value": "<Basic Auth Username>",
+				"type": "string"
+			},
+			{
+				"key": "password",
+				"value": "<Basic Auth Password>",
+				"type": "string"
+			}
+		]
+	},
+	"variable": [
+		{
+			"id": "0e2ced57-3517-4766-9ed8-36a3535e7f50",
+			"key": "baseUrl",
+			"value": "http://localhost:4201",
+			"type": "string"
+		}
+	]
+}
